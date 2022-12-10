@@ -1,6 +1,18 @@
-import LoginWindow as lw
+import OrderWindow as ow
+a_list = [1,2,3,4,5]
+ow.order(a_list)
 
-lw.system()
+
+
+
+
+
+
+#import LoginWindow as lw
+
+#lw.login()
+
+
 
 # import order as od
 

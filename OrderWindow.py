@@ -34,6 +34,10 @@ def order(table_number):
 
   #image = PhotoImage(file="menu-card.jpg")
   #original_image = image.subsample(3,3)  # resize image using subsample
+
+  def on_click():
+    im.items()
+    root.destroy()
   
   label_list = ['Item No.','Price','Quantity','Tax','Total ->']
   Label(left_frame, text=label_list[0], relief=RIDGE, width=15).grid(row=2,column=0)
@@ -46,8 +50,10 @@ def order(table_number):
   Entry(left_frame, bg='grey', relief=RIDGE, width=10).grid(row=5,column=1)
   Label(left_frame, text=label_list[4], relief=RIDGE, width=15).grid(row=6,column=0)
   Entry(left_frame, bg='grey', relief=RIDGE, width=10).grid(row=6,column=1)
-  Button(left_frame, text="Menu", command=lambda: im.menu()).grid(row=7,column=0)
+  Button(left_frame, text="Menu", command= on_click).grid(row=7,column=0)
   Button(left_frame, text="Add to cart", command='#').grid(row=7,column=1)
   
   
   root.mainloop()
+
+order(11)

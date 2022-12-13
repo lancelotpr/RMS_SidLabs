@@ -17,6 +17,7 @@ def login():
   root.geometry("640x480")
   root.title("Restaurant Management Tool")
     # Action on button function
+  
   def actionBtn():
     print_entry(name_var)
     for items in name_var.get(): aList.append(items)

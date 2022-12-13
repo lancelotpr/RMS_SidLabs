@@ -2,11 +2,7 @@ from tkinter import *
 import time
 import OrderWindow
 
-
 aList = []
-
-
-
 
 
 root = Tk()
@@ -32,7 +28,8 @@ def login():
   def print_entry(var):
       print(var.get())
 
-
+  
+  
   # top frame
   top_frame = Frame(root, bg="grey", width=640, height=100)
   
@@ -77,6 +74,7 @@ def login():
   # Organize stuff on the grid 
   top_frame.pack(side=TOP)
   center_frame.pack(side=TOP, anchor=CENTER)
+  
   #name_entry.pack(side=BOTTOM, anchor=CENTER)
   main_lbl.grid(row=0, column=0)
   local_time.grid(row=1, column=0)

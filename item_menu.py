@@ -41,13 +41,16 @@ def items():
     Label(item_holder, text=keys, fg='grey',relief=RIDGE, width=15).grid(row=r,column=0)
     r += 1
 
+  txt1 = '$'+str(item_dict['Pizza'][1])
   Label(item_holder, text=item_dict['Pizza'][0], fg='grey',relief=RIDGE, width=15).grid(row=1,column=1)
-  Label(item_holder, text=item_dict['Pizza'][1], fg='grey',relief=RIDGE, width=15).grid(row=1,column=2)
+  Label(item_holder, text=txt1, fg='grey',relief=RIDGE, width=15).grid(row=1,column=2)
   Radiobutton(item_holder, bg='grey',text="Select Item", variable=var, value=0,
               command=sel).grid(row=1,column=3)
 
+
+  txt2 = '$'+str(item_dict['Burger'][1])
   Label(item_holder, text=item_dict['Burger'][0], fg='grey',relief=RIDGE, width=15).grid(row=2,column=1)
-  Label(item_holder, text=item_dict['Burger'][1], fg='grey',relief=RIDGE, width=15).grid(row=2,column=2)
+  Label(item_holder, text=txt2, fg='grey',relief=RIDGE, width=15).grid(row=2,column=2)
   Radiobutton(item_holder, bg='grey',text="Select Item", variable=var, value=1,
               command=sel).grid(row=2,column=3)
   

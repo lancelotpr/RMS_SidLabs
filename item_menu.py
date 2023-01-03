@@ -66,9 +66,13 @@ def items():
 
   def proceed():
     var1 = tableNumber()
-    for items in l0: print("Items :", items)
+    #var2 = l0
+    newList = [items for sublist in l0 for items in sublist]
+    print(newList[1])
+    var2 = newList[1]
+    var3 = newList[2]
     print("Table No : ", var1)
-    odw.order(var1)
+    odw.order(var1, var2, var3)
     print("Proceed was called ->")
 
 

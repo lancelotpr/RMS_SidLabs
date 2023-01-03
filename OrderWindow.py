@@ -3,7 +3,7 @@ import item_menu as im
 # import time
 # import random
 
-def order(table_number):
+def order(table_number, item_number, item_price):
   
   print("The table number is : ", table_number)
   # later!!
@@ -41,17 +41,23 @@ def order(table_number):
   
   label_list = ['Item No.','Price','Quantity','Tax','Total ->']
   Label(left_frame, text=label_list[0], relief=RIDGE, width=15).grid(row=2,column=0)
-  Entry(left_frame, bg='grey', relief=RIDGE, width=10).grid(row=2,column=1)
+  Label(left_frame, text=item_number, relief=RIDGE, width=15).grid(row=2,column=1)
+  
   Label(left_frame, text=label_list[1], relief=RIDGE, width=15).grid(row=3,column=0)
-  Entry(left_frame, bg='grey', relief=RIDGE, width=10).grid(row=3,column=1)
+  Label(left_frame, text=item_price, relief=RIDGE, width=15).grid(row=3,column=1)
+
   Label(left_frame, text=label_list[2], relief=RIDGE, width=15).grid(row=4,column=0)
   Entry(left_frame, bg='grey', relief=RIDGE, width=10).grid(row=4,column=1)
+
   Label(left_frame, text=label_list[3], relief=RIDGE, width=15).grid(row=5,column=0)
-  Entry(left_frame, bg='grey', relief=RIDGE, width=10).grid(row=5,column=1)
+  Label(left_frame, text='12%', relief=RIDGE, width=15).grid(row=5,column=1)
+
   Label(left_frame, text=label_list[4], relief=RIDGE, width=15).grid(row=6,column=0)
-  Entry(left_frame, bg='grey', relief=RIDGE, width=10).grid(row=6,column=1)
+  Label(left_frame, text='total', relief=RIDGE, width=15).grid(row=6,column=1)
+
   Button(left_frame, text="Menu", command= on_click).grid(row=7,column=0)
   Button(left_frame, text="Add to cart", command='#').grid(row=7,column=1)
   
   
   root.mainloop()
+

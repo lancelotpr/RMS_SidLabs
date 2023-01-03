@@ -4,7 +4,6 @@ import item_menu as im
 
 aList = []
 
-
 root = Tk()
 
 def login():

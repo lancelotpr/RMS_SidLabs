@@ -55,4 +55,3 @@ def order(table_number):
   
   
   root.mainloop()
-

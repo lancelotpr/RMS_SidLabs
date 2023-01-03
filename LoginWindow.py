@@ -1,6 +1,6 @@
 from tkinter import *
 import time
-import OrderWindow
+import item_menu as im
 
 aList = []
 
@@ -17,9 +17,9 @@ def login():
   def actionBtn():
     print_entry(name_var)
     for items in name_var.get(): aList.append(items)
-    OrderWindow.order(aList)
-      #print(aList)
-      #root = Tk()
+   
+    im.items()
+    
     global root
     root.destroy()
     root.quit() # not working!

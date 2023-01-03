@@ -3,6 +3,12 @@ from tkinter import *
 # import random
 import LoginWindow as lw
 import order as od
+import OrderWindow as odw
+
+def tableNumber():
+  var1 = ""
+  for elements in lw.aList : var1 += elements
+  return var1
 
 
 def regOrder (tableNumber, itemName, itemPrice, itemQuantity, tax):
@@ -59,11 +65,14 @@ def items():
     
 
   def proceed():
-    var1 = lw.aList
+    var1 = tableNumber()
     for items in l0: print("Items :", items)
     print("Table No : ", var1)
+    odw.order(var1)
     print("Proceed was called ->")
-    
+
+
+
 
 
   Label(item_holder, text='Name', fg='black',relief=RIDGE, width=15).grid(row=0,column=0)

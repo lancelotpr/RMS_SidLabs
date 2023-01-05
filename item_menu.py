@@ -4,8 +4,7 @@ from tkinter import *
 import LoginWindow as lw
 import order as od
 import OrderWindow as odw
-from PIL import ImageTk, Image
-from tkinter import filedialog
+
 
 def tableNumber():
   var1 = ""

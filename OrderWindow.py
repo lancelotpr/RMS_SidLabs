@@ -54,7 +54,7 @@ def order(table_number, item_number, item_price, item_name):
   
   def checkOut():
     item_quantity = int(e.get())
-    total = "$ "+str(float(round(item_price * item_quantity) * 1.12))
+    total = "$ "+str(int(round(item_price * item_quantity) * 1.12))
     txt = "You Ordered\nItem Name - {}\nQuantity - {}\nTax - 12%\nTotal Pay : {}\n\n Thanks for your order!".format(item_name, item_quantity,total )
     messagebox.showinfo("SidLabs", txt)
     order = od.Orders(table_number, item_name, item_price, item_quantity,1.12)

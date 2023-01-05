@@ -11,6 +11,7 @@ def login():
 # setup and initiate screen    
   root.geometry("640x480")
   root.title("Restaurant Management Tool")
+  root.configure(bg="lime")
     # Action on button function
   
   def actionBtn():

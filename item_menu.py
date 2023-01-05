@@ -21,8 +21,9 @@ def regOrder (tableNumber, itemName, itemPrice, itemQuantity, tax):
 def items():
   
   root = Tk()
-  root.geometry("640x480")
+  root.geometry("480x400")
   root.title("Item's Menu")
+  root.configure(bg="lime")
 
   item_dict = {"Pizza" : ["P101", 2.5],
               "Burger" : ["B101", 3], 
@@ -31,7 +32,7 @@ def items():
              }
 
   # Create Frame widget
-  left_frame = Frame(root, width=400, height=450)
+  left_frame = Frame(root, width=480, height=400)
   left_frame.grid(row=0, column=0, padx=10, pady=5)
 
   # Create frame within left_frame

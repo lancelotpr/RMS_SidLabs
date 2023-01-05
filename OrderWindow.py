@@ -18,7 +18,8 @@ def order(table_number, item_number, item_price, item_name):
   root.geometry("440x280")
   root.title("Order Section")
 
-  root.config(bg="#b9eeb9")
+
+  root.config(bg="lime")
 
   # Create left and right frames
   left_frame = Frame(root, width=200, height=400, bg='grey')

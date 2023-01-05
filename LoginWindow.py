@@ -33,20 +33,20 @@ def login():
   
   
   # top frame
-  top_frame = Frame(root, bg="grey", width=640, height=100)
+  top_frame = Frame(root, bg="lime", width=640, height=100)
   
   # center frame
-  center_frame = Frame(root, bg="white", width=640, height=250)
+  center_frame = Frame(root, bg="aqua", width=640, height=250)
   
   # Time
   localtime = time.asctime(time.localtime(time.time()))
 
   # Main label
-  main_lbl = Label(top_frame, font=('Baskerville', 35, 'bold'), text="Welcome to Lance's\nRestaurant Management login", fg="Blue",
+  main_lbl = Label(top_frame, font=('Baskerville', 35, 'bold'), text="Welcome to Lance's\nRestaurant Management login", fg="Blue", bg="lime",
                   anchor=W)
   
   # time label
-  local_time = Label(top_frame, font=('Bodoni', 15,), text=localtime, fg="grey", anchor=W)
+  local_time = Label(top_frame, font=('Bodoni', 15,), text=localtime, fg="black", bg="aqua", anchor=W)
   
   # a blank label 
   blank_lbl1 = Label(center_frame, font=('ariel', 12, 'bold'), text="  ", fg="Blue",

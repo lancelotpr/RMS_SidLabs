@@ -22,6 +22,8 @@ def login():
     global root
     root.destroy()
     root.quit() # not working!
+
+    import sys; sys.exit()  
   
   name_var = StringVar()
   def print_entry(var):

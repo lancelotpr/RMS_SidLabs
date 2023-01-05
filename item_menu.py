@@ -4,6 +4,8 @@ from tkinter import *
 import LoginWindow as lw
 import order as od
 import OrderWindow as odw
+from PIL import ImageTk, Image
+from tkinter import filedialog
 
 def tableNumber():
   var1 = ""
@@ -37,7 +39,17 @@ def items():
   item_holder = Frame(left_frame, width=350, height=350, bg="purple")
   item_holder.grid(row=3, column=0, padx=5, pady=5)
 
-  
+  # Create a frame for the image
+  # bottom_frame = Frame(root, width=400, height=200)
+  # bottom_frame.grid(row=1, column=0, padx=10, pady=5)
+  # # x = open("/img1.png")
+  # canvas=Canvas(left_frame, width=100, height=50)
+  # canvas.grid(row=1, column=3, padx=10, pady=5)
+  # img=ImageTk.PhotoImage(file="img1.png")
+  # canvas.create_image(350, 200, image=img, anchor="center")
+
+
+
   # Create label above the item_holder
   Label(left_frame, text="Item List").grid(row=1, column=0, padx=5, pady=5)
 
@@ -71,8 +83,9 @@ def items():
     print(newList[1])
     var2 = newList[1]
     var3 = newList[2]
+    var4 = newList[0]
     print("Table No : ", var1)
-    odw.order(var1, var2, var3)
+    odw.order(var1, var2, var3, var4)
     print("Proceed was called ->")
 
 
